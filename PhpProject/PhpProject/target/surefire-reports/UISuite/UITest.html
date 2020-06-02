@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>TestNG:  UITest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>UITest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jun 02 22:58:19 SGT 2020</td>
+</tr>
+<tr><td>Total time:</td><td>38 seconds (38850 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Logout and Login Page", "Amazon Shopping feauture"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=83.0.4103.61)
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;ITEM-S76291&apos;, ip: &apos;192.168.1.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\KKANIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59316}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 65c95b161a990527afc7fa38b7faf9cc
+*** Element info: {Using=css selector, value=div[class=&apos;recaptcha-checkbox-border&apos;]}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:435)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:496)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy16.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:508)
+	at utilities.ElementFactory.javaScriptExecutorClick(ElementFactory.java:81)
+	at utilities.ElementFactory.elementClick(ElementFactory.java:37)
+	at pageObjects.LoginPage.loginAndEnsure(LoginPage.java:54)
+	at stepDefinitions.PhpTravelsRegistrationSteps.enter_username_and_password(PhpTravelsRegistrationSteps.java:89)
+	at ✽.Enter username, password to login and ensure login success(src/test/resources/features/PhpTravelsRegistration.feature:26)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1600504941", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1600504941'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=83.0.4103.61)
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;ITEM-S76291&apos;, ip: &apos;192.168.1.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\KKANIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59316}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 65c95b161a990527afc7fa38b7faf9cc
+*** Element info: {Using=css selector, value=div[class=&apos;recaptcha-checkbox-border&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:435)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:496)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy16.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:508)
+	at utilities.ElementFactory.javaScriptExecutorClick(ElementFactory.java:81)
+	at utilities.ElementFactory.elementClick(ElementFactory.java:37)
+	at pageObjects.LoginPage.loginAndEnsure(LoginPage.java:54)
+	at stepDefinitions.PhpTravelsRegistrationSteps.enter_username_and_password(PhpTravelsRegistrationSteps.java:89)
+	at ✽.Enter username, password to login and ensure login success(src/test/resources/features/PhpTravelsRegistration.feature:26)
+</pre></div></td>
+<td>38</td>
+<td>testRunner.TestRunner@369f73a2</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,10 @@
+utilities\TestContext.class
+utilities\DriverManager.class
+utilities\ElementFactory.class
+dataProviders\EnvPropertyManager.class
+pageObjects\RegistrationPage.class
+utilities\DriverManager$1.class
+pageObjects\LoginPage.class
+utilities\DriverType.class
+pageObjects\BasePage.class
+pageObjects\MyDetailsPage.class
